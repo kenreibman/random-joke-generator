@@ -16,7 +16,7 @@ The code is used with a try-catch block that handles errors.
 In summary, you should use a try-catch block in an async function when you need to handle errors locally, prevent unhandled rejections, and provide graceful error handling. However, the decision to use it should be based on your specific error-handling strategy and the requirements of your application.
 
 I also learned a more simplified version without try-catch blocks. 
-
+```
 const response = await fetch('https://v2.jokeapi.dev/joke/Any');
   const data = await response.json();
 
@@ -26,3 +26,4 @@ const response = await fetch('https://v2.jokeapi.dev/joke/Any');
     jokeContainer.textContent = `${data.setup} ${data.delivery}`;
   }
 }
+```
